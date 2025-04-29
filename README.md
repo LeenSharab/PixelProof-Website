@@ -20,7 +20,7 @@ It combines deep learning models with explainability techniques to provide clear
 |:---|:---|
 | Frontend | React, TypeScript, Vite |
 | Backend | Flask (Python 3), TensorFlow |
-| Machine Learning | Custom CNN model + LIME explainability |
+| Machine Learning | ResNet50+ Custom CNN model + LIME explainability |
 
 ---
 
