@@ -1,0 +1,88 @@
+.section-hero {
+  background-color: #f3f3f3;
+  padding: 6rem 0 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Ensures text on left, image on right */
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  padding: 0 2rem;
+  gap: 3rem;
+}
+
+/* Text Section */
+.hero-text-box {
+  max-width: 500px;
+}
+
+.heading-primary {
+  font-size: 40px;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+/* Image Section */
+.hero-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 15px;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 9px;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition: background-color 300ms ease;
+}
+
+.btn--fill {
+  background-color: #2b1954;
+  color: white;
+}
+
+.btn--outline {
+  background-color: transparent;
+  border: 2px solid #2b1954;
+  color: #2b1954;
+}
+
+.btn--fill:hover {
+  background-color: #8977b3;
+}
+
+.btn--outline:hover {
+  background-color: #2b1954;
+  color: white;
+}

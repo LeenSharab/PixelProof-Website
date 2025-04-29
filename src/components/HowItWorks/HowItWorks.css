@@ -1,0 +1,75 @@
+.how-it-works {
+  padding: 4rem 0 6rem 0; /* Increased bottom padding */
+
+  text-align: center;
+  max-width: 100%; /* Ensure it spans the full width */
+  width: 100%;
+  margin: 0 ; /* Center the section horizontally */
+  position: relative; /* Position elements relative to the section */
+  background-color: #f3f3f3;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  color: #2b1954;;
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem; /* Adjust size as needed */
+  font-weight: bold;
+  color: #2b1954; /* Match the color of 'Why Choose Us?' */
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.how-it-works h2::after {
+  content: "";
+  display: block;
+  width: 60px; /* Adjust width */
+  height: 4px; /* Adjust thickness */
+  background-color: #2b1954; /* Match underline color */
+  margin: 8px auto 0; /* Adjust spacing */
+}
+
+
+.steps {
+  display: flex;
+  justify-content: center; /* Center the steps */
+  gap: 2rem;
+  flex-wrap: wrap; /* Wrap content on smaller screens */
+  margin: 0 auto; /* Center the steps */
+  margin-left: 2mm;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.step-icon {
+  width: 150px; /* Adjust size as needed */
+  height: 190px;
+  margin-bottom: 0px;
+  
+}
+
+  .how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+
+
+  
+  .step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1mm;;
+  }
+  
+  .step p {
+    font-size: 1rem;
+    color: #666;
+    
+  }

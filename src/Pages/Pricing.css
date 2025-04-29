@@ -1,0 +1,144 @@
+/* Overall Page Styling */
+.pricing-container {
+    background-color: #f8f9fa;
+    padding: 4rem 1rem;
+    text-align: center;
+    margin-top: 14mm;
+}
+
+/* Title */
+.pricing-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 1rem;
+}
+
+.plan-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #343a40;
+    margin: 1rem 0;
+}
+
+.premium-box .plan-price {
+    color: #6f42c1; /* Purple */
+}
+
+.pricing-subtitle {
+    font-size: 1.rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+/* Pricing Grid - Two Plans */
+.pricing-grid.two-plans {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Default Pricing Card Styles */
+.pricing-card {
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+/* Freemium Box Styles */
+.freemium-box {
+    background: #ffffff;
+    border: 2px solid #4CAF50; /* Green border for Freemium */
+}
+
+.freemium-box .plan-price {
+    color: #4CAF50; /* Green text */
+}
+
+/* Buy Now Button */
+.buy-now-btn {
+    margin-top: auto;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Freemium Button (Solid Green) */
+.freemium-box .buy-now-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+}
+
+.freemium-box .buy-now-btn:hover {
+    background-color: #388E3C; /* Darker Green */
+}
+
+/* Premium Button (Solid Purple) */
+.premium-box .buy-now-btn {
+    background-color: #6f42c1; /* Purple */
+    color: white;
+    border: none;
+}
+
+.premium-box .buy-now-btn:hover {
+    background-color: #5a32a3; /* Darker Purple */
+}
+
+
+/* Premium Box Styles */
+.premium-box {
+    background: #ffffff;
+    border: 2px solid #6f42c1; /* Purple border for Premium */
+}
+
+.premium-box .plan-price {
+    color: #6f42c1; /* Purple text */
+}
+
+.premium-box .buy-now-btn {
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+}
+
+.premium-box .buy-now-btn:hover {
+    background-color: #5a32a3; /* Darker Purple */
+}
+
+/* Align check marks with text */
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: #495057;
+    transform: translateX(-20px);
+}
+
+/* Green check icon */
+.feature-icon {
+    color: #28a745;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-grid.two-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 90%;
+    }
+}

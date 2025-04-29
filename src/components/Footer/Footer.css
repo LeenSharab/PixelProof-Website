@@ -1,0 +1,75 @@
+/* Footer Main Container */
+.footer {
+  background: radial-gradient(circle at 0% 0%, #2b1954, #3f2182);
+  border-top: 1px solid #dee2e6;
+  padding: 1.5rem 0;
+  width: 100%;
+}
+
+/* Footer Content Container */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Left Section (Logo & Copyright) */
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #dee2e6;
+  
+}
+
+/* Right Section (Social Media Icons) */
+.footer-nav {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer-icon {
+  color: #dee2e6;
+  font-size: 20px; /* Adjust icon size */
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.footer-icon:hover {
+  color: #8977b3; /* Dark purple on hover */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-nav {
+    justify-content: center;
+  }
+}

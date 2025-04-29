@@ -1,0 +1,88 @@
+.feat {
+  background-color: #f3f3f3;
+  padding: rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align the items */
+  gap: 20px; /* Add spacing between cards */
+}
+
+.section-head {
+margin-bottom: 40px;
+text-align: center;
+padding: 0rem 0 0rem 0; /* Increased bottom padding */
+
+}
+
+.section-head h4 {
+position: relative;
+color: #2b1954;
+font-size: 34px;
+font-weight: 700;
+margin-bottom: 30px;
+}
+
+.section-head h4:before {
+content: '';
+width: 60px;
+height: 3px;
+background: #2b1954;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+bottom: -10px;
+}
+
+.item {
+  background: #fff;
+  text-align: center;
+  padding: 30px 25px;
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  border: 5px solid rgba(0, 0, 0, 0.07);
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  max-width: 320px; /* Restrict width of cards */
+  flex: 1 1 calc(33.333% - 40px); /* Ensure cards align in a grid with gap */
+  min-height: 200px; /* Set a minimum height */
+
+}
+
+.item:hover {
+  background: #2b1954;
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.item:hover h6, .item:hover p {
+  color: #fff;
+}
+
+.item .icon {
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: #2b1954;
+  width: 90px;
+  height: 90px;
+  line-height: 96px;
+  border-radius: 50px;
+}
+
+@media (max-width: 1024px) {
+  .item {
+      flex: 1 1 calc(50% - 40px); /* Show 2 columns on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+      flex: 1 1 100%; /* Stack items in a single column on mobile */
+  }
+}

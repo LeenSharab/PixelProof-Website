@@ -1,0 +1,245 @@
+/* Auth.css */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9ff 0%, #eef1ff 100%);
+    padding: 2rem;
+    margin-top: 20mm;
+  }
+  
+  .auth-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .auth-title {
+    font-size: 2rem;
+    color: #21103d;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .input-group {
+    position: relative;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    transition: border-color 0.2s ease;
+  }
+  
+  .input-group.error {
+    border-color: #ff4d4d;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a0a0a0;
+  }
+  
+  .input-group input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: 2rem;
+    font-size: 1rem;
+  }
+  
+  .password-strength {
+    display: flex;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+  }
+  
+  .strength-bar {
+    height: 4px;
+    flex: 1;
+    background: #e0e0e0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  .strength-bar.active {
+    background: var(--strength-color, #6366f1);
+  }
+  
+  .strength-bar:nth-child(1).active { --strength-color: #ff4444; }
+  .strength-bar:nth-child(2).active { --strength-color: #ffaa33; }
+  .strength-bar:nth-child(3).active { --strength-color: #33cc33; }
+  .strength-bar:nth-child(4).active { --strength-color: #6366f1; }
+  
+  .terms-group {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1rem 0;
+  }
+  
+  .terms-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 0.375rem;
+    transition: all 0.2s ease;
+  }
+  
+  input:checked + .checkmark {
+    background: #6366f1;
+    border-color: #6366f1;
+    color: white;
+  }
+  
+  .auth-button {
+    background: #43247e;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .auth-button:hover {
+    background: #4f46e5;
+    transform: translateY(-1px);
+  }
+  
+  .social-auth {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .divider {
+    color: #a0a0a0;
+    margin: 1.5rem 0;
+    position: relative;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45%;
+    height: 1px;
+    background: #e0e0e0;
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }
+   
+  .social-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.75rem;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .social-button:hover {
+    border-color: #6366f1;
+    transform: translateY(-1px);
+  }
+  
+  .social-button.google:hover { color: #db4437; }
+  .social-button.github:hover { color: #333; }
+  
+  .auth-footer {
+    text-align: center;
+    color: #666;
+  }
+  
+  .auth-footer a {
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .error-message {
+    color: #ff4d4d;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    display: block;
+  }
+  
+  @media (max-width: 480px) {
+    .auth-card {
+      padding: 2rem;
+    }
+    
+    .social-buttons {
+      flex-direction: column;
+    }
+  }
+
+  /* Add to Auth.css */
+.flex-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #666;
+  cursor: pointer;
+}
+
+.forgot-password {
+  color: #6366f1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.forgot-password:hover {
+  color: #4f46e5;
+}

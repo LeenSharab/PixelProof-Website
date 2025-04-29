@@ -1,0 +1,148 @@
+/* Overall Page Styling */
+.download-container {
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: #f9f9f9;
+    margin-top: 12mm;
+}
+
+/* Hero Section */
+.hero-section {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #121212;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: #2b1954;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.start-using {
+    background-color: #2b1954;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+.start-using:hover {
+    background-color: #21133e;
+}
+
+.add-to-chrome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #2b1954;
+    color: #2b1954;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.add-to-chrome:hover {
+    background-color: #f1eef7;
+}
+
+.chrome-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+.security-info {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.security-info i {
+    color: #2b1954;
+    margin-right: 5px;
+}
+
+.ratings {
+    font-size: 1.2rem;
+    color: #121212;
+    margin-top: 1rem;
+}
+
+.stars {
+    color: #ffb400;
+}
+
+
+/* Steps Section */
+.steps-section {
+    margin-top: 4rem;
+    padding: 3rem 1rem;
+    background-color: #2b1954;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.steps-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.step {
+    background: white;
+    color: #2b1954;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.step img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    margin-top: 1rem;
+}

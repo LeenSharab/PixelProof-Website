@@ -1,0 +1,7 @@
+.result-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a2e; /* Dark background */
+}
+
